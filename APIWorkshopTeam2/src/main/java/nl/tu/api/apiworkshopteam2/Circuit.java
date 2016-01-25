@@ -1,6 +1,8 @@
 package nl.tu.api.apiworkshopteam2;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 
 
@@ -12,15 +14,16 @@ import java.util.ArrayList;
 class Circuit {
 
 	private Gate output;
-	private ArrayList<Gate> inputs;
+	private Map<String, Gate> inputs;
 
-	public Circuit(){
-
+	protected Circuit(Map map){
+            inputs = map;
 	}
 
 	public void finalize() throws Throwable {
 
 	}
+        
 	public boolean evaluate(){
 		return false;
 	}
@@ -31,6 +34,10 @@ class Circuit {
 	 * @param name
 	 */
 	public void setInput(Boolean value, String name) throws IllegalArgumentException{
-
+               Gate key = inputs.get(name);
+               if (key != null)
+               {
+                   key.set(value);
+               }
 	}
 }//end Circuit
