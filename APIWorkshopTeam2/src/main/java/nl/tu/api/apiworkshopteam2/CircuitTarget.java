@@ -5,15 +5,12 @@ package nl.tu.api.apiworkshopteam2;
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-public abstract class CircuitTarget {
-
-	public CircuitTarget(){
-
-	}
-
-	public void finalize() throws Throwable {
-
-	}
+public abstract interface CircuitTarget {
+        
+        /**
+         * Evaluates the circuit starting with the gate at gate1
+         * @return true if the circuit results 
+         */
 	public abstract boolean evaluate();
 
 	/**

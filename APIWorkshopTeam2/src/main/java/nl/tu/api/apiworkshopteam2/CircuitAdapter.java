@@ -5,7 +5,7 @@ package nl.tu.api.apiworkshopteam2;
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-public class CircuitAdapter extends CircuitTarget {
+public class CircuitAdapter implements CircuitTarget {
 
 	private Circuit adaptee;
 
