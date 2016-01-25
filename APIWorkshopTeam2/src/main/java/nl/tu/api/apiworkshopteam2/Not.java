@@ -16,6 +16,6 @@ class Not extends UniGate {
 		super.finalize();
 	}
 	public boolean evaluate(){
-		return !input;
+		return input.evaluate();
 	}
 }//end Not

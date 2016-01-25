@@ -5,9 +5,10 @@ package nl.tu.api.apiworkshopteam2;
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-class ConcreteFactory extends AbstractFactory {
+class ConcreteFactory implements AbstractFactory {
 
 	private SpecParser parser;
+        private Circuit cirInstance;
 
 	public ConcreteFactory(){
             this. parser = new SpecParser();
@@ -22,6 +23,11 @@ class ConcreteFactory extends AbstractFactory {
 	 * @param specification
 	 */
 	public Circuit createCicruit(String specification){
-		return new CircuitAdapter(new Circuit(parser.getInputs(), parser.getOutPutGate()));
+		//return new CircuitAdapter(new Circuit(parser.getInputs(), parser.getOutPutGate()));
+                return null;
 	}
+        public void addGate(String specification){
+        
+        };
+        public void addInput(String name){};
 }//end ConcreteFactory

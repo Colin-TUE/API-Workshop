@@ -8,7 +8,7 @@ package nl.tu.api.apiworkshopteam2;
 abstract class Gate {
 
 	public Gate(){
-
+            
 	}
 
 	public void finalize() throws Throwable {
@@ -20,7 +20,7 @@ abstract class Gate {
 	 * 
 	 * @param value
 	 */
-	public void set(Boolean value){
+	public void set(boolean value){
 
 	}
 }//end Gate

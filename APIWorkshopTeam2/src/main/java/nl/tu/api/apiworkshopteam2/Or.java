@@ -15,6 +15,6 @@ class Or extends BiGate {
 		super.finalize();
 	}
 	public boolean evaluate(){
-		return input1 || input2;
+		return input1.evaluate() || input2.evaluate();
 	}
 }//end Or
