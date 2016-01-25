@@ -12,6 +12,7 @@ class Circuit {
 
 	private Gate output1;
         private Gate output2;
+        private Gate output3;
 	private Map<String, Gate> inputs;
 
 	protected Circuit(Map map)
@@ -49,21 +50,34 @@ class Circuit {
         
         protected void createAnd()
         {
-            Gate output3 = new And(output1, output2);
+            output3 = new And(output1, output2);
         }
         
         protected void createOR()
         {
-            Gate output3 = new Or(output1, output2);
+            output3 = new Or(output1, output2);
         }
         
         protected void createNOT()
         {
-            Gate output3 = new Not(output1);
+            output3 = new Not(output1);
         }
         
         protected void createInput()
         {
             Gate input = new Input(false);
+            output3 = input;
+        }
+        
+        protected void reAssign(int ref)
+        {
+            if (ref == 1)
+            {
+                output1 = output3;
+            }
+            else
+            {
+                output2 = output3;
+            }
         }
 }//end Circuit
