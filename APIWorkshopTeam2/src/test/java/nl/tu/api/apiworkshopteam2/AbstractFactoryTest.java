@@ -105,6 +105,7 @@ public class AbstractFactoryTest {
           circuitInstance.addInput("X1");
           circuitInstance.moveGate(1);
           circuitInstance.addGate("not");
+          circuitInstance.moveGate(1);
           CircuitTarget cirTarg ;
             cirTarg = circuitInstance.createCicruit();
             System.out.print(cirTarg.evaluate());

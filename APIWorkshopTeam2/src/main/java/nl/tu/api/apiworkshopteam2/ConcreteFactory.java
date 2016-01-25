@@ -23,8 +23,6 @@ class ConcreteFactory implements AbstractFactory {
     public void initiliazeEmptyCircuit() {
         cirInstance = new Circuit(new HashMap<String, Gate>());
     }
-    public Circuit setCircuit ()
-    { return cirInstance;}
 
     /**
      * Creates the actual circuit 

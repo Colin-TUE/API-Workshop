@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: nl.tu.api.apiworkshopteam2.AbstractFactoryTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec <<< FAILURE!
 testX1andX2(nl.tu.api.apiworkshopteam2.AbstractFactoryTest)  Time elapsed: 0.016 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
@@ -120,3 +121,6 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+=======
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec
+>>>>>>> 8983383a5c12f57417d5afecc49c96ef8fdc6c6e

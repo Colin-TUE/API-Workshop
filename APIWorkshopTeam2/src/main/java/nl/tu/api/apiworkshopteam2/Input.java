@@ -25,6 +25,6 @@ class Input extends Gate {
 	 * @param value
 	 */
 	public void set(boolean value){
-            
+            this.value = value;
 	}
 }//end Input
