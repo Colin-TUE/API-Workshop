@@ -75,16 +75,15 @@ class Circuit {
         
         protected void reAssign(int ref)
         {
-            if (ref == 1)
-            {
-                output1 = output3;
-            }
-            else if (ref == 2)
-            {
-                output2 = output3;
-            }
-            else {
-                //do nothin
+            switch (ref) {
+                case 1:
+                    output1 = output3;
+                    break;
+                case 2:
+                    output2 = output3;
+                    break;
+                default:
+                    break;
             }
         }
 }//end Circuit
