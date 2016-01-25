@@ -5,16 +5,7 @@ package nl.tu.api.apiworkshopteam2;
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-public interface AbstractFactory {
-
-    /*public AbstractFactory(){
-
-     }
-
-     public void finalize() throws Throwable {
-
-     }*/
-    
+public interface AbstractFactory {    
     
     /**
      * Initialazes an emtpy circuit for adding gates. 
@@ -32,12 +23,12 @@ public interface AbstractFactory {
      * Add the gate on top of gate1 and gate2 and outputs it at gate3
      *
      * @param specification the string representation of the specific gate
-     * ("and", "or" or "not")
+     * ("and", "or" or "not" for the &&, || or ! operation respectively)
      */
     public void addGate(String specification);
 
     /**
-     * Adds an input gate to gate 3
+     * Adds an input gate to gate3
      *
      * @param name The name referenced for the input
      */
