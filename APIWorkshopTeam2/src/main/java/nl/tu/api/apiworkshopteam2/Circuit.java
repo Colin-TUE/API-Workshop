@@ -20,7 +20,7 @@ class Circuit {
             inputs = map;
 	}            
         
-	protected boolean evaluate()
+	protected double evaluate()
         {
 		return output1.evaluate();
 	}
@@ -30,7 +30,7 @@ class Circuit {
 	 * @param value
 	 * @param name
 	 */
-	protected void setInput(Boolean value, String name) throws IllegalArgumentException
+	protected void setInput(double value, String name) throws IllegalArgumentException
         {
             Gate key = inputs.get(name);
             if (key != null)
