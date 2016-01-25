@@ -1,5 +1,7 @@
 package nl.tu.api.apiworkshopteam2;
 
+import java.util.HashMap;
+
 /**
  * @author CLambrec
  * @version 1.0
@@ -7,27 +9,56 @@ package nl.tu.api.apiworkshopteam2;
  */
 class ConcreteFactory implements AbstractFactory {
 
-	private SpecParser parser;
-        private Circuit cirInstance;
+    private Circuit cirInstance;
+    private boolean created = false;
 
-	public ConcreteFactory(){
-            this. parser = new SpecParser();
+    public ConcreteFactory() {
+        cirInstance = new Circuit(new HashMap<String, Gate>());
+    }
 
-	}
+    public void finalize() throws Throwable {
+        super.finalize();
+    }
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-	/**
-	 * 
-	 * @param specification
-	 */
-	public Circuit createCicruit(String specification){
-		//return new CircuitAdapter(new Circuit(parser.getInputs(), parser.getOutPutGate()));
-                return null;
-	}
-        public void addGate(String specification){
-        
-        };
-        public void addInput(String name){};
+    /**
+     *
+     * @param specification
+     */
+    public CircuitAdapter createCicruit() {
+        this.created = true;
+        return new CircuitAdapter(this.cirInstance);
+    }
+
+    public void addGate(String specification) {
+        if (this.created) {
+            return;
+        }
+        switch (specification) {
+            case "add":
+
+                break;
+
+            case "or":
+
+                break;
+
+            case "not":
+
+                break;
+        }
+    }
+
+    public void addInput(String name) {
+        if (this.created) {
+            return;
+        }
+    }
+
+    public void moveGate(int i) {
+        if (this.created) {
+            return;
+        }
+
+    }
+
 }//end ConcreteFactory
