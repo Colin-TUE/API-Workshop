@@ -63,10 +63,11 @@ class Circuit {
             output3 = new Not(output1);
         }
         
-        protected void createInput()
+        protected void createInput(String name)
         {
             Gate input = new Input(false);
             output3 = input;
+            inputs.put(name, input);
         }
         
         protected void reAssign(int ref)
