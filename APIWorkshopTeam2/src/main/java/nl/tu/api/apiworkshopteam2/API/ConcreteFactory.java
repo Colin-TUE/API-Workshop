@@ -5,7 +5,7 @@
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-protected class ConcreteFactory extends AbstractFactory {
+class ConcreteFactory extends AbstractFactory {
 
 	private SpecParser parser;
 

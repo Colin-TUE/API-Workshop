@@ -1,3 +1,7 @@
+package nl.tu.api.apiworkshopteam2.API;
+
+import java.util.ArrayList;
+
 
 
 /**
@@ -5,10 +9,10 @@
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-protected class Circuit {
+class Circuit {
 
 	private Gate output;
-	private Gate inputs;
+	private ArrayList<Gate> inputs;
 
 	public Circuit(){
 
@@ -26,7 +30,7 @@ protected class Circuit {
 	 * @param value
 	 * @param name
 	 */
-	public setInput(Boolean value, String name){
+	public void setInput(Boolean value, String name) throws IllegalArgumentException{
 
 	}
 }//end Circuit

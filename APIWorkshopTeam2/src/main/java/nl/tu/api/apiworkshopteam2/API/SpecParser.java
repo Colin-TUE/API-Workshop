@@ -5,7 +5,7 @@
  * @version 1.0
  * @created 25-Jan-2016 12:47:42
  */
-protected class SpecParser {
+class SpecParser {
 
 	public SpecParser(){
 
