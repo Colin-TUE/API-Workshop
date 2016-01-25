@@ -44,7 +44,7 @@ public class AbstractFactoryTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+      @org.junit.Test
         public void testX1andX2() {
           AbstractFactory circuitInstance = new ConcreteFactory();
           //circuitInstance.createCicruit("X1 AND X2");
@@ -52,7 +52,8 @@ public class AbstractFactoryTest {
           circuitInstance.addInput("X1");
           circuitInstance.addInput("X2");
           circuitInstance.addGate("add");
-	  fail("testX1andX2");
+          assertEquals(circuitInstance.createCicruit("true and true"), true);
+	  
     }
     
     /** 
@@ -60,19 +61,29 @@ public class AbstractFactoryTest {
      * verify that its result is false for input (false, true, false) and
      * it is true for input (false, false, true).
      */
+    @org.junit.Test
     public void testX1andX2orX3() {
         AbstractFactory circuitInstance = new ConcreteFactory();
-          circuitInstance.createCicruit("X1 AND X2 OR X3");
-	  fail("testX1andX2orX3");
+          //circuitInstance.createCicruit("X1 AND X2 OR X3");
+          circuitInstance.addInput("X1");
+          circuitInstance.addInput("X2");          
+          circuitInstance.addGate("add");
+          circuitInstance.addInput("X3");
+	  circuitInstance.addGate("or");
+          //TODO: 
+	   assertEquals(circuitInstance.createCicruit("true and true or true"), true);
     }
     /** 
      * Create a circuit to evaluate (x1 or not(x1)) and then
      * verify that its result is true for all values of x1.
      */
+    @org.junit.Test
     public void testAlwaysTrue() {
         AbstractFactory circuitInstance = new ConcreteFactory();
-          circuitInstance.createCicruit("X1 OR NOT X1");
-	  fail("testAlwaysTrue");
+          //circuitInstance.createCicruit("X1 OR NOT X1");
+          circuitInstance.addInput("X1");       
+          circuitInstance.addGate("not");	 
+	   assertEquals(circuitInstance.createCicruit("true"), true);
     }
     
     
