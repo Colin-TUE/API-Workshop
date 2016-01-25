@@ -38,21 +38,24 @@ public class AbstractFactoryTest {
     @After
     public void tearDown() {
     }
-
-    @org.junit.Test
-    public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
       @org.junit.Test
         public void testX1andX2() {
-          AbstractFactory circuitInstance = new ConcreteFactory();
-          //circuitInstance.createCicruit("X1 AND X2");
+          AbstractFactory cirIns = new ConcreteFactory();
+          CircuitTarget cirTarg ;//= new CircuitAdapter(cirIns);
+          cirIns.initiliazeEmptyCircuit();
+          //circuitIncirInsstance.createCicruit("X1 AND X2");          
+          cirIns.addInput("X1");
+          cirIns.moveGate(1);
+          cirIns.addInput("X2");
+          cirIns.moveGate(2);
+          cirIns.addGate("add");
+          //CircuitTarget ct = new CircuitAdapter(cirIns);
+          //ct = cirIns.createCicruit();
+          cirTarg = cirIns.createCicruit();
+          cirTarg.setInput(Boolean.TRUE, "X1");
+          cirTarg.setInput(Boolean.TRUE, "X2");
           
-          circuitInstance.addInput("X1");
-          circuitInstance.addInput("X2");
-          circuitInstance.addGate("add");
-          assertEquals(circuitInstance.createCicruit("true and true"), true);
+          assertEquals(cirTarg.evaluate(), Boolean.TRUE);
 	  
     }
     
@@ -64,14 +67,27 @@ public class AbstractFactoryTest {
     @org.junit.Test
     public void testX1andX2orX3() {
         AbstractFactory circuitInstance = new ConcreteFactory();
+        circuitInstance.initiliazeEmptyCircuit();
           //circuitInstance.createCicruit("X1 AND X2 OR X3");
           circuitInstance.addInput("X1");
-          circuitInstance.addInput("X2");          
+          circuitInstance.moveGate(1);
+          circuitInstance.addInput("X2");
+          circuitInstance.moveGate(2);          
           circuitInstance.addGate("add");
+          circuitInstance.moveGate(1);
           circuitInstance.addInput("X3");
+          circuitInstance.moveGate(2); 
 	  circuitInstance.addGate("or");
           //TODO: 
-	   assertEquals(circuitInstance.createCicruit("true and true or true"), true);
+	   
+           CircuitTarget cirTarg ;
+            cirTarg = circuitInstance.createCicruit();
+            
+          cirTarg.setInput(Boolean.TRUE, "X1");
+          cirTarg.setInput(Boolean.TRUE, "X2");
+          cirTarg.setInput(Boolean.TRUE, "X3");
+          assertEquals(cirTarg.evaluate(), Boolean.TRUE);
+         
     }
     /** 
      * Create a circuit to evaluate (x1 or not(x1)) and then
@@ -80,10 +96,14 @@ public class AbstractFactoryTest {
     @org.junit.Test
     public void testAlwaysTrue() {
         AbstractFactory circuitInstance = new ConcreteFactory();
+        circuitInstance.initiliazeEmptyCircuit();
           //circuitInstance.createCicruit("X1 OR NOT X1");
-          circuitInstance.addInput("X1");       
-          circuitInstance.addGate("not");	 
-	   assertEquals(circuitInstance.createCicruit("true"), true);
+          circuitInstance.addInput("X1");
+          circuitInstance.moveGate(1);
+          circuitInstance.addGate("not");
+          CircuitTarget cirTarg ;
+            cirTarg = circuitInstance.createCicruit();
+	   assertEquals(cirTarg.evaluate(), true);
     }
     
     
