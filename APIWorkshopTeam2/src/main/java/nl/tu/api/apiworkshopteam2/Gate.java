@@ -14,7 +14,7 @@ abstract class Gate {
 	public void finalize() throws Throwable {
 
 	}
-	public abstract boolean evaluate();
+	protected abstract boolean evaluate();
 
 	/**
 	 * 
