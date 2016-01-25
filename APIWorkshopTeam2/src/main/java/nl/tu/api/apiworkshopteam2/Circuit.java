@@ -32,15 +32,15 @@ class Circuit {
 	 */
 	protected void setInput(Boolean value, String name) throws IllegalArgumentException
         {
-               Gate key = inputs.get(name);
-               if (key != null)
-               {
-                   key.set(value);
-               }
-               else
-               {
-                   throw new IllegalArgumentException("Variable is not valid!");
-               }
+            Gate key = inputs.get(name);
+            if (key != null)
+            {
+               key.set(value);
+            }
+            else
+            {
+               throw new IllegalArgumentException("Variable is not valid!");
+            }
 	}
         
         protected void createAnd()
