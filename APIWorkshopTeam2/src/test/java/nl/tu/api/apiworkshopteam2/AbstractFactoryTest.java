@@ -47,7 +47,11 @@ public class AbstractFactoryTest {
     
         public void testX1andX2() {
           AbstractFactory circuitInstance = new ConcreteFactory();
-          circuitInstance.createCicruit("X1 AND X2");
+          //circuitInstance.createCicruit("X1 AND X2");
+          
+          circuitInstance.addInput("X1");
+          circuitInstance.addInput("X2");
+          circuitInstance.addGate("add");
 	  fail("testX1andX2");
     }
     

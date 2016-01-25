@@ -8,6 +8,7 @@ package nl.tu.api.apiworkshopteam2;
 class ConcreteFactory implements AbstractFactory {
 
 	private SpecParser parser;
+        private Circuit cirInstance;
 
 	public ConcreteFactory(){
             this. parser = new SpecParser();
@@ -25,4 +26,8 @@ class ConcreteFactory implements AbstractFactory {
 		//return new CircuitAdapter(new Circuit(parser.getInputs(), parser.getOutPutGate()));
                 return null;
 	}
+        public void addGate(String specification){
+        
+        };
+        public void addInput(String name){};
 }//end ConcreteFactory

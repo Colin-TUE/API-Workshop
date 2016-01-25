@@ -19,4 +19,6 @@ public interface AbstractFactory {
 	 * @param specification
 	 */
 	public Circuit createCicruit(String specification);
+        public void addGate(String specification);
+        public void addInput(String name);
 }//end AbstractFactory
