@@ -7,8 +7,8 @@ package nl.tu.api.apiworkshopteam2;
  */
 abstract class BiGate extends Gate {
 
-	private Gate input1;
-	private Gate input2;
+	protected Gate input1;
+	protected Gate input2;
 
 	public BiGate(Gate input1,Gate input2){
             this.input1 = input1;
