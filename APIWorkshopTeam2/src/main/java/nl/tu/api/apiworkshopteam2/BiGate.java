@@ -10,7 +10,9 @@ abstract class BiGate extends Gate {
 	private Gate input1;
 	private Gate input2;
 
-	public BiGate(){
+	public BiGate(Gate input1,Gate input2){
+            this.input1 = input1;
+            this.input2 = input2;
 
 	}
 
