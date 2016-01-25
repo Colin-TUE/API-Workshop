@@ -16,15 +16,18 @@ class Circuit {
 	private Gate output;
 	private Map<String, Gate> inputs;
 
-	protected Circuit(Map map){
+	protected Circuit(Map map)
+        {
             inputs = map;
 	}
 
-	public void finalize() throws Throwable {
+	public void finalize() throws Throwable 
+        {
 
 	}
         
-	public boolean evaluate(){
+	public boolean evaluate()
+        {
 		return false;
 	}
 
@@ -33,7 +36,8 @@ class Circuit {
 	 * @param value
 	 * @param name
 	 */
-	public void setInput(Boolean value, String name) throws IllegalArgumentException{
+	public void setInput(Boolean value, String name) throws IllegalArgumentException
+        {
                Gate key = inputs.get(name);
                if (key != null)
                {
