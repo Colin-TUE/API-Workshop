@@ -10,8 +10,8 @@ import java.util.Map;
  */
 class Circuit {
 
-	private Gate gate1;
-        private Gate gate2;
+	private Gate output1;
+        private Gate output2;
 	private Map<String, Gate> inputs;
 
 	protected Circuit(Map map)
@@ -49,17 +49,17 @@ class Circuit {
         
         protected void createAnd()
         {
-            Gate gate3 = new And(gate1, gate2);
+            Gate output3 = new And(output1, output2);
         }
         
         protected void createOR()
         {
-            Gate gate3 = new Or(gate1, gate2);
+            Gate output3 = new Or(output1, output2);
         }
         
         protected void createNOT()
         {
-            Gate gate3 = new Not(gate1);
+            Gate output3 = new Not(output1);
         }
         
         protected void createInput()
