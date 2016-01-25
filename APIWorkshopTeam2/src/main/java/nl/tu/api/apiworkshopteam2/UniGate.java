@@ -7,7 +7,7 @@ package nl.tu.api.apiworkshopteam2;
  */
 abstract class UniGate extends Gate {
 
-	private Gate input;
+	protected Gate input;
 
 	public UniGate(Gate input){
             this.input = input;
