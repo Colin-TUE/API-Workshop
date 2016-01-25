@@ -1,4 +1,4 @@
-
+package nl.tu.api.apiworkshopteam2.API.LogicalCircuits;
 
 /**
  * @author CLambrec
