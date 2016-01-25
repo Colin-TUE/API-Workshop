@@ -1,5 +1,7 @@
 package nl.tu.api.apiworkshopteam2;
 
+import com.sun.javafx.scene.layout.region.Margins;
+
 /**
  * @author CLambrec
  * @version 1.0
@@ -14,7 +16,7 @@ public class CircuitAdapter implements CircuitTarget {
 	}
 
 	public boolean evaluate(){
-		return adaptee.evaluate();
+		return (Math.round(adaptee.evaluate()) == 0) ? false : true;
 	}
 
 	/**
@@ -24,6 +26,6 @@ public class CircuitAdapter implements CircuitTarget {
          * @throws IllegalArgumentException when the variable referenced is not present in the circuit. 
 	 */
 	public void setInput(Boolean value, String name) throws IllegalArgumentException {
-            adaptee.setInput(value, name);
+            adaptee.setInput( (value== true) ? 1.0 : 0.0, name);
 	}
 }//end CircuitAdapter
