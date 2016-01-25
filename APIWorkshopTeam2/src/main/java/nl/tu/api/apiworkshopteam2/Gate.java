@@ -20,7 +20,7 @@ abstract class Gate {
 	 * 
 	 * @param value
 	 */
-	public void set(boolean value){
+	protected void set(boolean value){
 
 	}
 }//end Gate

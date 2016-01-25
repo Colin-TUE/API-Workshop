@@ -16,7 +16,7 @@ class Input extends Gate {
 	public void finalize() throws Throwable {
 		super.finalize();
 	}
-	public boolean evaluate(){
+	protected boolean evaluate(){
 		return this.value;
 	}
 
@@ -24,7 +24,7 @@ class Input extends Gate {
 	 * 
 	 * @param value
 	 */
-	public void set(boolean value){
+	protected void set(boolean value){
             this.value = value;
 	}
 }//end Input

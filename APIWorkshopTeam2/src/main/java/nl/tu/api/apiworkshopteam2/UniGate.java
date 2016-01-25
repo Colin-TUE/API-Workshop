@@ -9,7 +9,7 @@ abstract class UniGate extends Gate {
 
 	protected Gate input;
 
-	public UniGate(Gate input){
+	protected UniGate(Gate input){
             this.input = input;
 	}
 
