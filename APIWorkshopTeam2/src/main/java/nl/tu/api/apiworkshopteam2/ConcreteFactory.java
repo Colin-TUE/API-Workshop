@@ -13,15 +13,19 @@ class ConcreteFactory implements AbstractFactory {
     private boolean created = false;
 
     public ConcreteFactory() {
-        cirInstance = new Circuit(new HashMap<String, Gate>());
+        
     }
 
     public void finalize() throws Throwable {
         super.finalize();
     }
+    
+    public void initiliazeEmptyCircuit() {
+        cirInstance = new Circuit(new HashMap<String, Gate>());
+    }
 
     /**
-     *
+     * Creates the actual circuit 
      * @param specification
      */
     public CircuitAdapter createCicruit() {

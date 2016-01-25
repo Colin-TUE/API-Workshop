@@ -14,6 +14,14 @@ public interface AbstractFactory {
      public void finalize() throws Throwable {
 
      }*/
+    
+    
+    /**
+     * Initialazes an emtpy circuit for adding gates. 
+     */
+    public void initiliazeEmptyCircuit();
+    
+    
     /**
      * Creates the circuit that you specified using the other functions. From
      * this point onwards no modifications are allowed.
