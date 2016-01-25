@@ -14,13 +14,13 @@ abstract class Gate {
 	public void finalize() throws Throwable {
 
 	}
-	protected abstract boolean evaluate();
+	protected abstract double evaluate();
 
 	/**
 	 * 
 	 * @param value
 	 */
-	protected void set(boolean value){
+	protected void set(double value){
 
 	}
 }//end Gate
