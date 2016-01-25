@@ -5,14 +5,13 @@ package nl.tu.api.apiworkshopteam2;
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-public interface AbstractFactory {    
-    
+public interface AbstractFactory {
+
     /**
-     * Initialazes an emtpy circuit for adding gates. 
+     * Initialazes an emtpy circuit for adding gates.
      */
     public void initiliazeEmptyCircuit();
-    
-    
+
     /**
      * Creates the circuit that you specified using the other functions. From
      * this point onwards no modifications are allowed.
@@ -28,7 +27,8 @@ public interface AbstractFactory {
     public void addGate(String specification);
 
     /**
-     * Adds an input gate to gate3
+     * Adds an input gate to gate3, if it was referenced before it will use
+     * that one
      *
      * @param name The name referenced for the input
      */
