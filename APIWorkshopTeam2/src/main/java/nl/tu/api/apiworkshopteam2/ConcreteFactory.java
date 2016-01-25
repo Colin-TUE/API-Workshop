@@ -10,6 +10,7 @@ class ConcreteFactory extends AbstractFactory {
 	private SpecParser parser;
 
 	public ConcreteFactory(){
+            this. parser = new SpecParser();
 
 	}
 
@@ -21,6 +22,6 @@ class ConcreteFactory extends AbstractFactory {
 	 * @param specification
 	 */
 	public Circuit createCicruit(String specification){
-		return null;
+		return new CircuitAdapter(new Circuit(parser.getInputs(), parser.getOutPutGate()));
 	}
 }//end ConcreteFactory
