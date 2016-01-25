@@ -33,7 +33,7 @@ class Circuit {
 	protected void setInput(double value, String name) throws IllegalArgumentException
         {
             Gate key = inputs.get(name);
-            if (key != null)
+            if (key != null && value >= 0.0 && value <= 1.0)
             {
                key.set(value);
             }
