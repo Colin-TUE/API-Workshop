@@ -1,9 +1,6 @@
 package nl.tu.api.apiworkshopteam2;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
-
 
 
 /**
@@ -13,7 +10,8 @@ import java.util.Map;
  */
 class Circuit {
 
-	private Gate output;
+	private Gate gate1;
+        private Gate gate2;
 	private Map<String, Gate> inputs;
 
 	protected Circuit(Map map)
@@ -21,12 +19,12 @@ class Circuit {
             inputs = map;
 	}
 
-	public void finalize() throws Throwable 
+	protected void finalize() throws Throwable 
         {
 
 	}
         
-	public boolean evaluate()
+	protected boolean evaluate()
         {
 		return false;
 	}
@@ -36,7 +34,7 @@ class Circuit {
 	 * @param value
 	 * @param name
 	 */
-	public void setInput(Boolean value, String name) throws IllegalArgumentException
+	protected void setInput(Boolean value, String name) throws IllegalArgumentException
         {
                Gate key = inputs.get(name);
                if (key != null)
@@ -48,4 +46,24 @@ class Circuit {
                    throw new IllegalArgumentException("Variable is not valid!");
                }
 	}
+        
+        protected void createAnd()
+        {
+            Gate gate3 = new And(gate1, gate2);
+        }
+        
+        protected void createOR()
+        {
+            Gate gate3 = new Or(gate1, gate2);
+        }
+        
+        protected void createNOT()
+        {
+            Gate gate3 = new Not(gate1);
+        }
+        
+        protected void createInput()
+        {
+            Gate input = new Input(false);
+        }
 }//end Circuit
