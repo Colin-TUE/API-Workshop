@@ -60,9 +60,17 @@ class Circuit {
         
         protected void createInput(String name)
         {
-            Gate input = new Input(false);
-            output3 = input;
-            inputs.put(name, input);
+            Gate key = inputs.get(name);
+            if (key == null)
+            {
+                Gate input = new Input(false);
+                output3 = input;
+                inputs.put(name, input);
+            }
+            else
+            {
+               output3 = key;
+            }
         }
         
         protected void reAssign(int ref)
