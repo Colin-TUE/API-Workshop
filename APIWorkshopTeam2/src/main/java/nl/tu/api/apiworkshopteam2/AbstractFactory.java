@@ -1,7 +1,5 @@
 package nl.tu.api.apiworkshopteam2;
 
-import nl.tu.api.apiworkshopteam2.API.*;
-
 /**
  * @author CLambrec
  * @version 1.0
