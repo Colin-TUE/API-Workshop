@@ -13,9 +13,6 @@ public class CircuitAdapter implements CircuitTarget {
             this.adaptee = circuit;
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
 	public boolean evaluate(){
 		return adaptee.evaluate();
 	}

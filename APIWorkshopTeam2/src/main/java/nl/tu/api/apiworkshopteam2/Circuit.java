@@ -79,9 +79,12 @@ class Circuit {
             {
                 output1 = output3;
             }
-            else
+            else if (ref == 2)
             {
                 output2 = output3;
+            }
+            else {
+                //do nothin
             }
         }
 }//end Circuit
