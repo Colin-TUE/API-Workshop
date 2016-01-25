@@ -6,8 +6,9 @@ package nl.tu.api.apiworkshopteam2;
  * @created 25-Jan-2016 12:47:41
  */
 class Not extends UniGate {
-
-	public Not(){
+        private boolean input;
+	protected Not(boolean input){
+            this.input = input;
 
 	}
 
@@ -15,6 +16,6 @@ class Not extends UniGate {
 		super.finalize();
 	}
 	public boolean evaluate(){
-		return false;
+		return !this.input;
 	}
 }//end Not
