@@ -18,16 +18,11 @@ class Circuit {
 	protected Circuit(Map map)
         {
             inputs = map;
-	}
-
-	protected void finalize() throws Throwable 
-        {
-
-	}
+	}            
         
 	protected boolean evaluate()
         {
-		return false;
+		return output1.evaluate();
 	}
 
 	/**
