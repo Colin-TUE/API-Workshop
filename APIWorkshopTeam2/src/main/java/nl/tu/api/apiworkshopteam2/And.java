@@ -1,13 +1,12 @@
-package nl.tu.api.apiworkshopteam2.API.LogicalCircuits;
-
+package nl.tu.api.apiworkshopteam2;
 /**
  * @author CLambrec
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-protected class Or extends BiGate {
+class And extends BiGate {
 
-	public Or(){
+	public And(){
 
 	}
 
@@ -17,4 +16,4 @@ protected class Or extends BiGate {
 	public boolean evaluate(){
 		return false;
 	}
-}//end Or
+}//end And

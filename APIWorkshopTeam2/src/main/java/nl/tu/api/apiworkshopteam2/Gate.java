@@ -1,13 +1,13 @@
-
+package nl.tu.api.apiworkshopteam2;
 
 /**
  * @author CLambrec
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-public abstract class CircuitTarget {
+abstract class Gate {
 
-	public CircuitTarget(){
+	public Gate(){
 
 	}
 
@@ -19,7 +19,8 @@ public abstract class CircuitTarget {
 	/**
 	 * 
 	 * @param value
-	 * @param name
 	 */
-	public abstract void setInput(Boolean value, String name);
-}//end CircuitTarget
+	public void set(Boolean value){
+
+	}
+}//end Gate

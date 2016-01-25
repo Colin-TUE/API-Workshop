@@ -1,11 +1,11 @@
-package nl.tu.api.apiworkshopteam2.API.LogicalCircuits;
+package nl.tu.api.apiworkshopteam2;
 
 /**
  * @author CLambrec
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-protected class Input extends Gate {
+class Input extends Gate {
 
 	private boolean value;
 
@@ -22,9 +22,9 @@ protected class Input extends Gate {
 
 	/**
 	 * 
-	 * @param Boolean
+	 * @param value
 	 */
-	public set(value Boolean){
+	public void set(Boolean value){
 
 	}
 }//end Input

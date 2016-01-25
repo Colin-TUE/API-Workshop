@@ -1,4 +1,4 @@
-package nl.tu.api.apiworkshopteam2.API;
+package nl.tu.api.apiworkshopteam2;
 
 import java.util.ArrayList;
 

@@ -1,13 +1,13 @@
-package nl.tu.api.apiworkshopteam2.API.LogicalCircuits;
+package nl.tu.api.apiworkshopteam2;
 
 /**
  * @author CLambrec
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-protected abstract class Gate {
+public abstract class CircuitTarget {
 
-	public Gate(){
+	public CircuitTarget(){
 
 	}
 
@@ -19,8 +19,7 @@ protected abstract class Gate {
 	/**
 	 * 
 	 * @param value
+	 * @param name
 	 */
-	public set(Boolean value){
-
-	}
-}//end Gate
+	public abstract void setInput(Boolean value, String name);
+}//end CircuitTarget
