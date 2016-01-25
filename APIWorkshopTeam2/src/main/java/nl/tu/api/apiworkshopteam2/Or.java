@@ -14,7 +14,7 @@ class Or extends BiGate {
 	public void finalize() throws Throwable {
 		super.finalize();
 	}
-	protected boolean evaluate(){
-		return input1.evaluate() || input2.evaluate();
+	protected double evaluate(){
+		return 1-(1-input1.evaluate())*(1-input2.evaluate());
 	}
 }//end Or

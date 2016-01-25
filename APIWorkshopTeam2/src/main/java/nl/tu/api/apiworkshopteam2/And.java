@@ -14,7 +14,7 @@ class And extends BiGate {
 	public void finalize() throws Throwable {
 		super.finalize();
 	}
-	protected boolean evaluate(){
+	protected double evaluate(){
 		return input1.evaluate() * input2.evaluate();
 	}
 }//end And

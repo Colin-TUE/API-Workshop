@@ -7,16 +7,16 @@ package nl.tu.api.apiworkshopteam2;
  */
 class Input extends Gate {
 
-	private boolean value;
+	private double value;
 
-	protected Input(boolean value){
+	protected Input(double value){
             this.value = value;
 	}
 
 	public void finalize() throws Throwable {
 		super.finalize();
 	}
-	protected boolean evaluate(){
+	protected double evaluate(){
 		return this.value;
 	}
 
@@ -24,7 +24,7 @@ class Input extends Gate {
 	 * 
 	 * @param value
 	 */
-	protected void set(boolean value){
+	protected void set(double value){
             this.value = value;
 	}
 }//end Input

@@ -15,7 +15,7 @@ class Not extends UniGate {
 	public void finalize() throws Throwable {
 		super.finalize();
 	}
-	protected boolean evaluate(){
-		return !input.evaluate();
+	protected double evaluate(){
+		return 1-input.evaluate();
 	}
 }//end Not
