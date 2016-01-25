@@ -43,5 +43,9 @@ class Circuit {
                {
                    key.set(value);
                }
+               else
+               {
+                   throw new IllegalArgumentException("Variable is not valid!");
+               }
 	}
 }//end Circuit
