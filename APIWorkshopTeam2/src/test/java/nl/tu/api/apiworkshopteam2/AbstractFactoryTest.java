@@ -41,21 +41,22 @@ public class AbstractFactoryTest {
       @org.junit.Test
         public void testX1andX2() {
           AbstractFactory cirIns = new ConcreteFactory();
-          CircuitTarget cirTarg ;//= new CircuitAdapter(cirIns);
+          CircuitTarget cirTarg;
           cirIns.initiliazeEmptyCircuit();
           //circuitIncirInsstance.createCicruit("X1 AND X2");          
           cirIns.addInput("X1");
           cirIns.moveGate(1);
           cirIns.addInput("X2");
           cirIns.moveGate(2);
-          cirIns.addGate("add");
+          cirIns.addGate("and");
+          cirIns.moveGate(1);
           //CircuitTarget ct = new CircuitAdapter(cirIns);
           //ct = cirIns.createCicruit();
           cirTarg = cirIns.createCicruit();
-          cirTarg.setInput(Boolean.TRUE, "X1");
-          cirTarg.setInput(Boolean.TRUE, "X2");
-          
-          assertEquals(cirTarg.evaluate(), Boolean.TRUE);
+          cirTarg.setInput(true, "X1");
+          cirTarg.setInput(true, "X2");
+          System.out.print(cirTarg.evaluate());
+          assertEquals(cirTarg.evaluate(), true);
 	  
     }
     
@@ -73,20 +74,23 @@ public class AbstractFactoryTest {
           circuitInstance.moveGate(1);
           circuitInstance.addInput("X2");
           circuitInstance.moveGate(2);          
-          circuitInstance.addGate("add");
+          circuitInstance.addGate("and");
           circuitInstance.moveGate(1);
           circuitInstance.addInput("X3");
           circuitInstance.moveGate(2); 
 	  circuitInstance.addGate("or");
+          circuitInstance.moveGate(1);
           //TODO: 
 	   
            CircuitTarget cirTarg ;
             cirTarg = circuitInstance.createCicruit();
             
-          cirTarg.setInput(Boolean.TRUE, "X1");
-          cirTarg.setInput(Boolean.TRUE, "X2");
-          cirTarg.setInput(Boolean.TRUE, "X3");
-          assertEquals(cirTarg.evaluate(), Boolean.TRUE);
+          cirTarg.setInput(true, "X1");
+          cirTarg.setInput(true, "X2");
+          cirTarg.setInput(true, "X3");
+          System.out.print(cirTarg.evaluate());
+          assertTrue(cirTarg.evaluate());
+          //assertEquals(cirTarg.evaluate(), Boolean.TRUE);
          
     }
     /** 
@@ -103,7 +107,8 @@ public class AbstractFactoryTest {
           circuitInstance.addGate("not");
           CircuitTarget cirTarg ;
             cirTarg = circuitInstance.createCicruit();
-	   assertEquals(cirTarg.evaluate(), true);
+            System.out.print(cirTarg.evaluate());
+	   assertTrue(cirTarg.evaluate());
     }
     
     

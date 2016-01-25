@@ -1,14 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: nl.tu.api.apiworkshopteam2.AbstractFactoryTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec <<< FAILURE!
 testX1andX2(nl.tu.api.apiworkshopteam2.AbstractFactoryTest)  Time elapsed: 0.02 sec  <<< FAILURE!
+=======
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec <<< FAILURE!
+testX1andX2(nl.tu.api.apiworkshopteam2.AbstractFactoryTest)  Time elapsed: 0.031 sec  <<< FAILURE!
+>>>>>>> 0eb7881676fbe195787628cd49b8c967c85ecbd9
 java.lang.AssertionError: expected:<false> but was:<true>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at nl.tu.api.apiworkshopteam2.AbstractFactoryTest.testX1andX2(AbstractFactoryTest.java:58)
+	at nl.tu.api.apiworkshopteam2.AbstractFactoryTest.testX1andX2(AbstractFactoryTest.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -43,12 +48,11 @@ java.lang.AssertionError: expected:<false> but was:<true>
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
 testAlwaysTrue(nl.tu.api.apiworkshopteam2.AbstractFactoryTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<false> but was:<true>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at nl.tu.api.apiworkshopteam2.AbstractFactoryTest.testAlwaysTrue(AbstractFactoryTest.java:106)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at nl.tu.api.apiworkshopteam2.AbstractFactoryTest.testAlwaysTrue(AbstractFactoryTest.java:111)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,12 +87,11 @@ java.lang.AssertionError: expected:<false> but was:<true>
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
 testX1andX2orX3(nl.tu.api.apiworkshopteam2.AbstractFactoryTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<false> but was:<true>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at nl.tu.api.apiworkshopteam2.AbstractFactoryTest.testX1andX2orX3(AbstractFactoryTest.java:89)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at nl.tu.api.apiworkshopteam2.AbstractFactoryTest.testX1andX2orX3(AbstractFactoryTest.java:92)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
