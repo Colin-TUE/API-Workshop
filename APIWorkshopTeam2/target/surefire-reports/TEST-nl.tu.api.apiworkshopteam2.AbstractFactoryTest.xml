@@ -62,7 +62,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="nl.tu.api.apiworkshopteam2.AbstractFactoryTest" name="testX1andX2" time="0.006"/>
+  <testcase classname="nl.tu.api.apiworkshopteam2.AbstractFactoryTest" name="testX1andX2" time="0.007"/>
   <testcase classname="nl.tu.api.apiworkshopteam2.AbstractFactoryTest" name="testAlwaysTrue" time="0"/>
   <testcase classname="nl.tu.api.apiworkshopteam2.AbstractFactoryTest" name="testX1andX2orX3" time="0"/>
 </testsuite>

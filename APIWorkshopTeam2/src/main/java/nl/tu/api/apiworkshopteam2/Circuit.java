@@ -32,15 +32,15 @@ class Circuit {
 	 */
 	protected void setInput(Boolean value, String name) throws IllegalArgumentException
         {
-               Gate key = inputs.get(name);
-               if (key != null)
-               {
-                   key.set(value);
-               }
-               else
-               {
-                   throw new IllegalArgumentException("Variable is not valid!");
-               }
+            Gate key = inputs.get(name);
+            if (key != null)
+            {
+               key.set(value);
+            }
+            else
+            {
+               throw new IllegalArgumentException("Variable is not valid!");
+            }
 	}
         
         protected void createAnd()
@@ -75,16 +75,15 @@ class Circuit {
         
         protected void reAssign(int ref)
         {
-            if (ref == 1)
-            {
-                output1 = output3;
-            }
-            else if (ref == 2)
-            {
-                output2 = output3;
-            }
-            else {
-                //do nothin
+            switch (ref) {
+                case 1:
+                    output1 = output3;
+                    break;
+                case 2:
+                    output2 = output3;
+                    break;
+                default:
+                    break;
             }
         }
 }//end Circuit
