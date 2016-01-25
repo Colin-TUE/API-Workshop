@@ -9,22 +9,22 @@ class Input extends Gate {
 
 	private boolean value;
 
-	public Input(){
-
+	protected Input(boolean value){
+            this.value = value;
 	}
 
 	public void finalize() throws Throwable {
 		super.finalize();
 	}
 	public boolean evaluate(){
-		return false;
+		return this.value;
 	}
 
 	/**
 	 * 
 	 * @param value
 	 */
-	public void set(Boolean value){
-
+	public void set(boolean value){
+            
 	}
 }//end Input
