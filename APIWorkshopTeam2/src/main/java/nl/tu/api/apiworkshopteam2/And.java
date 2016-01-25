@@ -6,12 +6,9 @@ package nl.tu.api.apiworkshopteam2;
  */
 class And extends BiGate {
        
-        private boolean input1;
-        private boolean input2;
         
-	protected And(boolean input1, boolean input2){
-            this.input1 = input1;
-            this.input2 = input2;
+	protected And(Gate input1, Gate input2){
+            super(input1,input2);
 	}
 
 	public void finalize() throws Throwable {
