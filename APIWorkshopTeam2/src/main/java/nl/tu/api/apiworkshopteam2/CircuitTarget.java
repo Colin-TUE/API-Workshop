@@ -21,5 +21,5 @@ public abstract class CircuitTarget {
 	 * @param value
 	 * @param name
 	 */
-	public abstract void setInput(Boolean value, String name);
+	public abstract void setInput(Boolean value, String name) throws IllegalArgumentException;
 }//end CircuitTarget
