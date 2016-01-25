@@ -34,16 +34,16 @@ class ConcreteFactory implements AbstractFactory {
             return;
         }
         switch (specification) {
-            case "add":
-
+            case "and":
+                this.cirInstance.createAnd();
                 break;
 
             case "or":
-
+                this.cirInstance.createOR();
                 break;
 
             case "not":
-
+                this.cirInstance.createNOT();
                 break;
         }
     }
@@ -52,13 +52,14 @@ class ConcreteFactory implements AbstractFactory {
         if (this.created) {
             return;
         }
+        this.cirInstance.createInput(name);
     }
 
     public void moveGate(int i) {
         if (this.created) {
             return;
         }
-
+        this.cirInstance.reAssign(i);
     }
 
 }//end ConcreteFactory
