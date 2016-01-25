@@ -1,4 +1,4 @@
-
+package nl.tu.api.apiworkshopteam2.Interface;
 
 /**
  * @author CLambrec
@@ -25,7 +25,7 @@ public class CircuitAdapter extends CircuitTarget {
 	 * @param value
 	 * @param name
 	 */
-	public setInput(Boolean value, String name){
+	public void setInput(Boolean value, String name) throws IllegalArgumentException {
 
 	}
 }//end CircuitAdapter
