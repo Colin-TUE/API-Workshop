@@ -15,6 +15,6 @@ class And extends BiGate {
 		super.finalize();
 	}
 	public boolean evaluate(){
-		return this.input1 && this.input2;
+		return ;
 	}
 }//end And
