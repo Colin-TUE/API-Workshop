@@ -63,7 +63,7 @@ class Circuit {
             Gate key = inputs.get(name);
             if (key == null)
             {
-                Gate input = new Input(false);
+                Gate input = new Input(0.00);
                 output3 = input;
                 inputs.put(name, input);
             }
