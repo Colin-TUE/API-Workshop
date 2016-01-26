@@ -11,9 +11,10 @@ class And extends BiGate {
         super(input1, input2);
     }
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
+    public void finalize() throws Throwable {
+	super.finalize();
+    }
+    
     public double evaluate() {
         return input1.evaluate() * input2.evaluate();
     }

@@ -11,9 +11,10 @@ class Or extends BiGate {
         super(input1, input2);
     }
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
+    public void finalize() throws Throwable {
+	super.finalize();
+    }
+    
     public double evaluate() {
         return 1 - (1 - input1.evaluate()) * (1 - input2.evaluate());
     }

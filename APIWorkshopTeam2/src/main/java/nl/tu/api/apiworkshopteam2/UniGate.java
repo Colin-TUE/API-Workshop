@@ -12,6 +12,7 @@ public abstract class UniGate extends Gate {
 	public UniGate(Gate input){
             this.input = input;
 	}
+        
 	public void finalize() throws Throwable {
 		super.finalize();
 	}
