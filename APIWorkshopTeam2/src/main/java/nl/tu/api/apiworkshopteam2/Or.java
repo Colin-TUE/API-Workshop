@@ -7,7 +7,7 @@ package nl.tu.api.apiworkshopteam2;
  */
 class Or extends BiGate {
 
-    public Or(Gate input1, Gate input2) {
+    protected Or(Gate input1, Gate input2) {
         super(input1, input2);
     }
 

@@ -7,7 +7,7 @@ package nl.tu.api.apiworkshopteam2;
  */
 class And extends BiGate {
 
-    public And(Gate input1, Gate input2) {
+    protected And(Gate input1, Gate input2) {
         super(input1, input2);
     }
 

@@ -7,7 +7,7 @@ package nl.tu.api.apiworkshopteam2;
  */
 class Not extends UniGate {
 
-    public Not(Gate input) {
+    protected Not(Gate input) {
         super(input);
 
     }

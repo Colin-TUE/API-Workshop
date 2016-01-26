@@ -101,7 +101,7 @@ public class ConcreteFactory implements AbstractFactory {
         }
     }
 
-    protected boolean isTypeOf(String myClass, Class<?> superClass) {
+    private boolean isTypeOf(String myClass, Class<?> superClass) {
         boolean isSubclassOf = false;
         try {
             Class<?> clazz = Class.forName(myClass);

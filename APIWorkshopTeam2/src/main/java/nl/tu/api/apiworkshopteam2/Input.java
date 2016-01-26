@@ -9,7 +9,7 @@ class Input extends Gate {
 
     private double value;
 
-    public Input(double value) {
+    protected Input(double value) {
         this.value = value;
     }
 
