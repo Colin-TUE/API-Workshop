@@ -7,7 +7,7 @@ import java.util.HashMap;
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-class ConcreteFactory implements AbstractFactory {
+public class ConcreteFactory implements AbstractFactory {
 
     private Circuit cirInstance;
     private boolean created = false;
