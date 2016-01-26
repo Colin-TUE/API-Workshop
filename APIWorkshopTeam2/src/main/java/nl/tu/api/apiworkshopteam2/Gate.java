@@ -5,7 +5,7 @@ package nl.tu.api.apiworkshopteam2;
  * @version 1.0
  * @created 25-Jan-2016 12:47:41
  */
-abstract class Gate {
+public abstract class Gate {
 
 	public Gate(){
             
@@ -14,13 +14,14 @@ abstract class Gate {
 	public void finalize() throws Throwable {
 
 	}
-	protected abstract double evaluate();
+        
+	public abstract double evaluate();
 
 	/**
 	 * 
 	 * @param value
 	 */
-	protected void set(double value){
+	public void set(double value){
 
 	}
 }//end Gate

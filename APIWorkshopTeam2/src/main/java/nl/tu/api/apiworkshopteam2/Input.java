@@ -7,24 +7,25 @@ package nl.tu.api.apiworkshopteam2;
  */
 class Input extends Gate {
 
-	private double value;
+    private double value;
 
-	protected Input(double value){
-            this.value = value;
-	}
+    protected Input(double value) {
+        this.value = value;
+    }
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-	protected double evaluate(){
-		return this.value;
-	}
+    public void finalize() throws Throwable {
+	super.finalize();
+    }
+    
+    public double evaluate() {
+        return this.value;
+    }
 
-	/**
-	 * 
-	 * @param value
-	 */
-	protected void set(double value){
-            this.value = value;
-	}
+    /**
+     *
+     * @param value
+     */
+    public void set(double value) {
+        this.value = value;
+    }
 }//end Input
