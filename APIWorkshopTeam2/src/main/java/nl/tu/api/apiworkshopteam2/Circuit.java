@@ -76,7 +76,7 @@ class Circuit {
         }
     }
 
-    void createCustomBinOp(Class op) {
+    protected void createCustomBinOp(Class op) {
         try {
             Constructor<?> ctor = op.getConstructor(Gate.class, Gate.class);
             Object object = ctor.newInstance(new Gate[]{output1, output2});
@@ -88,7 +88,7 @@ class Circuit {
         }
     }
     
-    void createCustomUniOp(Class op) {
+    protected void createCustomUniOp(Class op) {
         try {
             Constructor<?> ctor = op.getConstructor(Gate.class);
             Object object = ctor.newInstance(new Gate[]{output1});
