@@ -35,7 +35,7 @@ public abstract interface CircuitTarget {
      *
      * @param value
      * @param name
-     * @throws IllegalArgument exception when the name of the variable is not
+     * @throws IllegalArgumentException when the name of the variable is not
      * referencing a name or when the value is out of rang [0.0, 1.0]
      */
     public abstract void setInput(double value, String name) throws IllegalArgumentException;

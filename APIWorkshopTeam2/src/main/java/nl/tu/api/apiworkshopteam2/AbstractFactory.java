@@ -47,7 +47,7 @@ public interface AbstractFactory {
      * @param op The operation and its evaluation
      * @param call The specific string to call it from using the Factory method
      * for addGate()
-     * @throws IllegalArgumetnException if there is an operation with the call
+     * @throws IllegalArgumentException if there is an operation with the call
      * {@code call} already, or {@code op} was not of the type Gate, or {@code
      * op} was null
      */
