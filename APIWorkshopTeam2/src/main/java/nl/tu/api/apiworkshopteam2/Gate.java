@@ -11,6 +11,9 @@ public abstract class Gate {
             
 	}
 
+	public void finalize() throws Throwable {
+
+	}
 	public abstract double evaluate();
 
 	/**

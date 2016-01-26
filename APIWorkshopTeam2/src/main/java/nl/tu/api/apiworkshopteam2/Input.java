@@ -9,10 +9,13 @@ class Input extends Gate {
 
     private double value;
 
-    protected Input(double value) {
+    public Input(double value) {
         this.value = value;
     }
 
+	public void finalize() throws Throwable {
+		super.finalize();
+	}
     public double evaluate() {
         return this.value;
     }
@@ -21,7 +24,7 @@ class Input extends Gate {
      *
      * @param value
      */
-    protected void set(double value) {
+    public void set(double value) {
         this.value = value;
     }
 }//end Input
