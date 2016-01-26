@@ -20,7 +20,7 @@ public abstract class Gate {
 	 * 
 	 * @param value
 	 */
-	protected void set(double value){
+	public void set(double value){
 
 	}
 }//end Gate

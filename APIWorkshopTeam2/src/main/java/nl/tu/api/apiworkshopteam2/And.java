@@ -7,10 +7,13 @@ package nl.tu.api.apiworkshopteam2;
  */
 class And extends BiGate {
 
-    protected And(Gate input1, Gate input2) {
+    public And(Gate input1, Gate input2) {
         super(input1, input2);
     }
 
+	public void finalize() throws Throwable {
+		super.finalize();
+	}
     public double evaluate() {
         return input1.evaluate() * input2.evaluate();
     }
