@@ -7,10 +7,13 @@ package nl.tu.api.apiworkshopteam2;
  */
 class Or extends BiGate {
 
-    protected Or(Gate input1, Gate input2) {
+    public Or(Gate input1, Gate input2) {
         super(input1, input2);
     }
 
+	public void finalize() throws Throwable {
+		super.finalize();
+	}
     public double evaluate() {
         return 1 - (1 - input1.evaluate()) * (1 - input2.evaluate());
     }

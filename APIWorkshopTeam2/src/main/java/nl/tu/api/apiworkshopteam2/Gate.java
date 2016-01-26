@@ -7,7 +7,7 @@ package nl.tu.api.apiworkshopteam2;
  */
 public abstract class Gate {
 
-	protected Gate(){
+	public Gate(){
             
 	}
 

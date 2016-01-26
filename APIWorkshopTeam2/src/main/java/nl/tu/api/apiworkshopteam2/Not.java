@@ -7,11 +7,14 @@ package nl.tu.api.apiworkshopteam2;
  */
 class Not extends UniGate {
 
-    protected Not(Gate input) {
+    public Not(Gate input) {
         super(input);
 
     }
 
+	public void finalize() throws Throwable {
+		super.finalize();
+	}
     public double evaluate() {
         return 1 - input.evaluate();
     }

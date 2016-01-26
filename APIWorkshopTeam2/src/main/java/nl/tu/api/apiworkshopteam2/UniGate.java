@@ -9,7 +9,10 @@ public abstract class UniGate extends Gate {
 
 	protected Gate input;
 
-	protected UniGate(Gate input){
+	public UniGate(Gate input){
             this.input = input;
+	}
+	public void finalize() throws Throwable {
+		super.finalize();
 	}
 }//end UniGate
