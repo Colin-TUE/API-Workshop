@@ -40,10 +40,6 @@ public class AbstractFactoryTest {
     }
 
     //=====Test For API Version 1===============================================
-    /**
-     * Create a circuit to evaluate x1 and x2 and then verify that its result is
-     * false for input (false, true) and it is true for input (true, true).
-     */
     @org.junit.Test
     public void testX1andX2() {
         AbstractFactory cirIns = new ConcreteFactory();
@@ -56,12 +52,12 @@ public class AbstractFactoryTest {
         cirIns.moveGate(2);
         cirIns.addGate("and");
         cirIns.moveGate(1);
-        //CircuitTarget ct = new CircuitAdapter(cirIns);
+          //CircuitTarget ct = new CircuitAdapter(cirIns);
         //ct = cirIns.createCicruit();
         cirTarg = cirIns.createCicruit();
         cirTarg.setInput(true, "X1");
         cirTarg.setInput(true, "X2");
-        System.out.println(cirTarg.evaluate());
+        System.out.print(cirTarg.evaluate());
         assertEquals(cirTarg.evaluate(), true);
 
     }
@@ -86,7 +82,7 @@ public class AbstractFactoryTest {
         circuitInstance.moveGate(2);
         circuitInstance.addGate("or");
         circuitInstance.moveGate(1);
-        //TODO: 
+          //TODO: 
 
         CircuitTarget cirTarg;
         cirTarg = circuitInstance.createCicruit();
@@ -94,9 +90,9 @@ public class AbstractFactoryTest {
         cirTarg.setInput(true, "X1");
         cirTarg.setInput(true, "X2");
         cirTarg.setInput(true, "X3");
-        System.out.println(cirTarg.evaluate());
+        System.out.print(cirTarg.evaluate());
         assertTrue(cirTarg.evaluate());
-        //assertEquals(cirTarg.evaluate(), Boolean.TRUE);
+          //assertEquals(cirTarg.evaluate(), Boolean.TRUE);
 
     }
 
@@ -115,7 +111,7 @@ public class AbstractFactoryTest {
         circuitInstance.moveGate(1);
         CircuitTarget cirTarg;
         cirTarg = circuitInstance.createCicruit();
-        System.out.println(cirTarg.evaluate());
+        System.out.print(cirTarg.evaluate());
         assertTrue(cirTarg.evaluate());
     }
 

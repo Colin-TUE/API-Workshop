@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="nl.tu.api.apiworkshopteam2.test.AbstractFactoryTest" time="0.077" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="nl.tu.api.apiworkshopteam2.test.AbstractFactoryTest" time="0.074" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\bin"/>
@@ -62,10 +62,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="nl.tu.api.apiworkshopteam2.test.AbstractFactoryTest" name="testX1andX2orNotX1" time="0.013"/>
+  <testcase classname="nl.tu.api.apiworkshopteam2.test.AbstractFactoryTest" name="testX1andX2orNotX1" time="0.006"/>
   <testcase classname="nl.tu.api.apiworkshopteam2.test.AbstractFactoryTest" name="testImproperUseOfTheCircuit" time="0"/>
   <testcase classname="nl.tu.api.apiworkshopteam2.test.AbstractFactoryTest" name="testX1andX2" time="0"/>
   <testcase classname="nl.tu.api.apiworkshopteam2.test.AbstractFactoryTest" name="testAlwaysTrue" time="0"/>
-  <testcase classname="nl.tu.api.apiworkshopteam2.test.AbstractFactoryTest" name="testGreaterThanElement" time="0.001"/>
+  <testcase classname="nl.tu.api.apiworkshopteam2.test.AbstractFactoryTest" name="testGreaterThanElement" time="0.002"/>
   <testcase classname="nl.tu.api.apiworkshopteam2.test.AbstractFactoryTest" name="testX1andX2orX3" time="0"/>
 </testsuite>
